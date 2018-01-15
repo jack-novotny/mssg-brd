@@ -1,0 +1,58 @@
+AllCops:
+  Exclude:
+    - bin/**/*
+    - config/**/*
+    - db/**/*
+    - vendor/**/*
+  TargetRubyVersion: 2.4
+  TargetRailsVersion: 5.1
+  DisplayCopNames: true
+
+Rails:
+  Enabled: true
+
+AbcSize:
+  Exclude:
+    - lib/tasks/seed.rake
+    - test/**/*
+
+BlockLength:
+  Exclude:
+    - test/**/*
+    - lib/tasks/seed.rake
+
+ClassLength:
+  Exclude:
+    - test/**/*
+
+Documentation:
+  Exclude:
+    - test/**/*
+
+DynamicFindBy:
+  Exclude:
+    - lib/tasks/default.rake
+
+LineLength:
+  Exclude:
+    - Gemfile
+    - Rakefile
+
+ModuleLength:
+  Exclude:
+    - test/**/*
+
+MethodLength:
+  Exclude:
+    - test/**/*
+    - lib/tasks/seed.rake
+
+OrderedGems:
+  Enabled: false
+
+SingleLineMethods:
+  Exclude:
+    - test/**/*
+
+StringLiterals:
+  EnforcedStyle: double_quotes
